@@ -1,0 +1,113 @@
+
+:root{
+    --verydarkgray: hsl(0, 0%, 17%);
+    --darkgray: hsl(0, 0%, 59%);
+    --white: hsl(0,100%,100%);
+    --textinput: 18px;
+}
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+.head-section{
+    height: 35vh;
+    background: url("images/pattern-bg.png");
+    text-align: center;
+    position: relative;
+    padding-top: 2rem;
+}
+
+h4{
+    color: var(--darkgray);
+}
+
+#map{
+    height: 70vh;
+    position: relative;
+}
+
+#title{
+    color: var(--white);
+    margin-bottom: 2rem;
+}
+
+.data-section{
+    background-color: var(--white);
+    position: absolute;
+    width: 60%;
+    margin: auto 3% auto 20%;
+    transform: translateY(5%);
+    z-index: 1000;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+
+#location::before, #timezone::before, #isp::before{
+    display: block;
+    content: "";
+    background-color: var(--darkgray);
+    width: 0.5px;
+    height: 40%;
+    z-index: 10000;
+    position: absolute;
+    margin-left: -30px;
+}
+
+
+.icon{
+    background-color: black;
+    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: -0.19rem;
+    border-bottom: 2px solid black;
+}
+
+
+input{
+    height: 2.5rem;
+    border: none;
+    outline: none;
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    .data-section{
+        background-color: var(--white);
+        position: absolute;
+        width: 60%;
+        margin: auto 3% auto 20%;
+        transform: translateY(60%);
+        z-index: 1000;
+        min-height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        border-radius: 10px;
+        padding-top: 1.5rem;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
